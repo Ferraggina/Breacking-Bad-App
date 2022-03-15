@@ -1,0 +1,129 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 600px;
+  border-radius: 200px;
+}
+/* ------------------------------------------------------ */
+.contenedor {
+  border-radius: 55px;
+  border: double;
+  border-width: 8px;
+  border-color: rgba(18, 57, 119, 0.767);
+  margin-top: 20px;
+  margin-left: 33%;
+  margin-right: 33%;
+  background: rgba(84, 147, 206, 0.541);
+  backdrop-filter: saturate(280%) blur(10px);
+  background-image: url("https://www.onlygfx.com/wp-content/uploads/2021/08/broken-glass-0112.png");
+
+  background-size: cover;
+  background-repeat: repeat;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font: 0.9rem futura-book;
+  box-shadow: 1px -1px 13px 4px rgba(0, 0, 0, 0.93);
+  margin-bottom: 3%;
+  padding-bottom: 15px;
+}
+
+.contenedor h1 {
+  font: 1.4rem futura-book;
+  font-size: 30px;
+  font-family: "BREAKING BAD", sans-serif;
+  color: #0f0e0e;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 20px 20px 0 0;
+  padding-top: 8px;
+}
+
+.imagenDetalle {
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-top: 15px;
+  color: #f8f8f8c0;
+  font: 1.8rem "BREAKING BAD", sans-serif;
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  font: 1.2rem "BREAKING BAD", sans-serif;
+  margin: 0.8%;
+}
+.botonDetalle {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2%;
+  margin-top: 20px;
+}
+
+/* ------------------------------------------------------ */
+
+.button {
+  --color: rgba(20, 127, 177, 0.623);
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 600;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: rgba(245, 245, 245, 0.726);
+  z-index: 1;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #2093ff71;
+  transition: 1s ease;
+}
+
+.button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button:hover {
+  color: rgb(13, 4, 63);
+  border-color: rgb(10, 4, 65);
+}
+
+.button:active {
+  filter: brightness(0.8);
+}
